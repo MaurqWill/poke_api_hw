@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="./static/style.css">
+<script src="https://unpkg.com/uuid@latest/dist/umd/uuidv4.min.js" defer></script>
+<script src="./script.js" defer></script>
+<title>Pokémon Search</title>
+</head>
+<body class="container d-flex flex-column align-items-center">
+    <form onsubmit="handleSubmit(event)" class="row border shadow w-75 p-5 g-3 mt-5">
+        <div class="form-floating col-12 mb-3">
+            <select class="form-select" id="pokemon-select" name="pokemon-select">
+                <option value="">Select a Pokémon</option>
+                <option value="bulbasaur">Bulbasaur</option>
+                <option value="ivysaur">Ivysaur</option>
+                <option value="venusaur">Venusaur</option>
+                <option value="charmander">Charmander</option>
+                <option value="charmeleon">Charmeleon</option>
+                <option value="charizard">Charizard</option>
+                <option value="squirtle">Squirtle</option>
+                <option value="wartortle">Wartortle</option>
+                <option value="blastoise">Blastoise</option>
+            </select>
+            <label for="pokemon-select" class="ps-3">Choose a Pokémon</label>
+        </div>
+        <div class="form-floating col-12 mb-3">
+            <input type="text" class="form-control" id="search" name="search" placeholder="Pokémon Name or ID">
+            <label for="search" class="ps-3">Or Search a Pokémon</label>
+        </div>
+        <button type="submit" class="btn btn-outline-info col-6 ms-3">Search</button>
+    </form>
+    
+    
+    <div class="row row-cols-1 justify-content-center my-5 g-3 w-100" id="pokemon-display">
+        <!-- Pokémon will be displayed here -->
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

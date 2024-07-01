@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(rgba(15,168,198, .2), rgba(15,168,198, .5)), url('../static/images/poke2.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+form {
+    background-color: rgba(22,83,99, .8);
+    max-width: 500px;
+}
+
+.card {
+    max-width: 800px;
+}
+
+#image {
+    min-width: 250px;
+}
+
+#image img {
+    height: 100%;
+    width: auto;
+}
+
+@media screen and (min-width: 768px) {
+    #image {
+        max-width: 280px;
+    }
+}
